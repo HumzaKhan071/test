@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:test/Screens/Step1/Model/MyStepModel.dart';
+import 'package:test/Screens/Utils/utils.dart';
 
 import 'Widget/MyStepContainer.dart';
 
@@ -33,7 +34,7 @@ class _Step1State extends State<Step1> {
             child: Text(
               "Skip",
               style: GoogleFonts.manrope(
-                  color: Color(0xffF38E2A),
+                  color: orangeColor,
                   fontSize: 15,
                   fontWeight: FontWeight.bold),
             ),
@@ -78,8 +79,7 @@ class _Step1State extends State<Step1> {
                 width: double.infinity,
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                    color: Color(0xffF38E2A),
-                    borderRadius: BorderRadius.circular(9)),
+                    color: orangeColor, borderRadius: BorderRadius.circular(9)),
                 child: Center(
                   child: Text(
                     "Done",

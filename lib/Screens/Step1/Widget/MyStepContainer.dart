@@ -18,7 +18,7 @@ class MyStepContainer extends StatefulWidget {
 }
 
 class _MyStepContainerState extends State<MyStepContainer> {
-  bool press = false;
+  bool press = true;
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,6 @@ class _MyStepContainerState extends State<MyStepContainer> {
       child: Container(
         height: 55,
         width: 158,
-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
